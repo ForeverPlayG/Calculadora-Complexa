@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj",
+        "projectName": "CALCULADORA  COMPLEXA",
+        "projectPath": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj",
+        "packagesPath": "C:\\Users\\ruisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ruisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

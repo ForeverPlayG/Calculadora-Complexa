@@ -1,0 +1,17 @@
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\bin\Debug\net6.0-windows\CALCULADORA  COMPLEXA.exe
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\bin\Debug\net6.0-windows\CALCULADORA  COMPLEXA.deps.json
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\bin\Debug\net6.0-windows\CALCULADORA  COMPLEXA.runtimeconfig.json
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\bin\Debug\net6.0-windows\CALCULADORA  COMPLEXA.dll
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\bin\Debug\net6.0-windows\CALCULADORA  COMPLEXA.pdb
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA__COMPLEXA.Form1.resources
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.vbproj.GenerateResource.cache
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.AssemblyInfoInputs.cache
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.AssemblyInfo.vb
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.vbproj.CoreCompileInputs.cache
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.dll
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\refint\CALCULADORA  COMPLEXA.dll
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.pdb
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA  COMPLEXA.genruntimeconfig.cache
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\ref\CALCULADORA  COMPLEXA.dll
+C:\Users\ruisa\Desktop\jogoPedro_Data\AIB\vscominity\CALCULADORA  COMPLEXA\CALCULADORA  COMPLEXA\obj\Debug\net6.0-windows\CALCULADORA__COMPLEXA.Resources.resources
