@@ -58,7 +58,7 @@ Partial Class Form1
         BttLOG = New Button()
         BttSD = New Button()
         BttPERMUTACOES = New Button()
-        BttPERCENTAGEM = New Button()
+        BttAPAGAR = New Button()
         BttFATORIAL = New Button()
         SuspendLayout()
         ' 
@@ -85,6 +85,7 @@ Partial Class Form1
         ' 
         ' Btt2
         ' 
+        Btt2.BackgroundImage = CType(resources.GetObject("Btt2.BackgroundImage"), Image)
         Btt2.Location = New Point(224, 141)
         Btt2.Name = "Btt2"
         Btt2.Size = New Size(45, 49)
@@ -166,7 +167,7 @@ Partial Class Form1
         ' 
         ' BttVEZES
         ' 
-        BttVEZES.Location = New Point(470, 81)
+        BttVEZES.Location = New Point(470, 132)
         BttVEZES.Name = "BttVEZES"
         BttVEZES.Size = New Size(61, 42)
         BttVEZES.TabIndex = 11
@@ -193,9 +194,9 @@ Partial Class Form1
         ' 
         ' BttSQR
         ' 
-        BttSQR.Location = New Point(470, 184)
+        BttSQR.Location = New Point(536, 81)
         BttSQR.Name = "BttSQR"
-        BttSQR.Size = New Size(61, 42)
+        BttSQR.Size = New Size(61, 45)
         BttSQR.TabIndex = 14
         BttSQR.Text = "√"
         BttSQR.UseVisualStyleBackColor = True
@@ -211,7 +212,7 @@ Partial Class Form1
         ' 
         ' BttDIVIDIR
         ' 
-        BttDIVIDIR.Location = New Point(470, 132)
+        BttDIVIDIR.Location = New Point(470, 184)
         BttDIVIDIR.Name = "BttDIVIDIR"
         BttDIVIDIR.Size = New Size(61, 42)
         BttDIVIDIR.TabIndex = 16
@@ -380,14 +381,14 @@ Partial Class Form1
         BttPERMUTACOES.Text = "nPc"
         BttPERMUTACOES.UseVisualStyleBackColor = True
         ' 
-        ' BttPERCENTAGEM
+        ' BttAPAGAR
         ' 
-        BttPERCENTAGEM.Location = New Point(537, 81)
-        BttPERCENTAGEM.Name = "BttPERCENTAGEM"
-        BttPERCENTAGEM.Size = New Size(60, 42)
-        BttPERCENTAGEM.TabIndex = 26
-        BttPERCENTAGEM.Text = "%"
-        BttPERCENTAGEM.UseVisualStyleBackColor = True
+        BttAPAGAR.Location = New Point(471, 81)
+        BttAPAGAR.Name = "BttAPAGAR"
+        BttAPAGAR.Size = New Size(60, 42)
+        BttAPAGAR.TabIndex = 26
+        BttAPAGAR.Text = "⌫"
+        BttAPAGAR.UseVisualStyleBackColor = True
         ' 
         ' BttFATORIAL
         ' 
@@ -403,6 +404,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(800, 450)
         Controls.Add(BttCOS1)
         Controls.Add(BttTAN)
@@ -414,7 +416,7 @@ Partial Class Form1
         Controls.Add(BttLOG)
         Controls.Add(BttSD)
         Controls.Add(BttPERMUTACOES)
-        Controls.Add(BttPERCENTAGEM)
+        Controls.Add(BttAPAGAR)
         Controls.Add(BttFATORIAL)
         Controls.Add(BttELEVADO)
         Controls.Add(BttSIN)
@@ -482,7 +484,7 @@ Partial Class Form1
     Friend WithEvents BttLOG As Button
     Friend WithEvents BttSD As Button
     Friend WithEvents BttPERMUTACOES As Button
-    Friend WithEvents BttPERCENTAGEM As Button
+    Friend WithEvents BttAPAGAR As Button
     Friend WithEvents BttFATORIAL As Button
 
 End Class

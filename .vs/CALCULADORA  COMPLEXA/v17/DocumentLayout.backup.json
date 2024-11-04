@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|c:\\users\\ruisa\\desktop\\jogopedro_data\\aib\\vscominity\\calculadora  complexa\\calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|solutionrelative:calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|c:\\users\\ruisa\\desktop\\jogopedro_data\\aib\\vscominity\\calculadora  complexa\\calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|solutionrelative:calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|c:\\users\\ruisa\\desktop\\jogopedro_data\\aib\\vscominity\\calculadora  complexa\\calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CB426DE1-E9EE-4409-86E4-F53FDE4F628C}|CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA.vbproj|solutionrelative:calculadora  complexa\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\Form1.vb",
               "RelativeDocumentMoniker": "CALCULADORA  COMPLEXA\\Form1.vb",
               "ToolTip": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\Form1.vb",
               "RelativeToolTip": "CALCULADORA  COMPLEXA\\Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAqwPUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-15T11:48:53.03Z",
               "IsPinned": true,
@@ -40,7 +40,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.vb [Projeto]",
               "DocumentMoniker": "C:\\Users\\ruisa\\Desktop\\jogoPedro_Data\\AIB\\vscominity\\CALCULADORA  COMPLEXA\\CALCULADORA  COMPLEXA\\Form1.vb",
               "RelativeDocumentMoniker": "CALCULADORA  COMPLEXA\\Form1.vb",

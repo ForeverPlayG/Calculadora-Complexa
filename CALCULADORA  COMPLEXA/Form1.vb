@@ -3,8 +3,9 @@ Imports System.Math
 Imports System.Threading
 ' A MODIFICAR: Quando for feita a FR, vai aparecer outro visor a mostrai x2=  FEITO
 '              Botão de cancelar nas combinações que crasha    
-'              Aparecer escrito no txtbox o que estou a escrever na trignometria, raiz , raiz de indice X, log e corrigir calc comb
-'              Botão para apagar o ultimo caracter escrito
+'              corrigir Aparecer escrito no txtbox o que estou a escrever na trignometria, raiz , raiz de indice X, log e  calc comb
+'              Botão para apagar o ultimo caracter escrito FEITO 
+'              Personalização 
 '              :D
 Public Class Form1
     Dim eae, op As Byte
@@ -234,11 +235,15 @@ Public Class Form1
 
 
 
-    Private Sub BttPERCENTAGEM_Click(sender As Object, e As EventArgs) Handles BttPERCENTAGEM.Click
-        n1 = Val(TxtBox.Text)
-        'TxtBox.Text = Str(n1 / 100)
-        eae = 0
-        TxtBox.Text &= n1 & " : 100 =" & Str(n1 / 100)
+    Private Sub BttAPAGAR_Click(sender As Object, e As EventArgs) Handles BttAPAGAR.Click
+        If TxtBox.Text.Length > 0 Then
+            ' Remove o último caractere
+            TxtBox.Text = TxtBox.Text.Substring(0, TxtBox.Text.Length - 1)
+        End If
+        If TxtBox.Text.Length = 0 Then
+            eae = 0
+            TxtBox.Text = "0"
+        End If
     End Sub
 
 
@@ -254,17 +259,20 @@ Public Class Form1
 
     Private Sub BttFATORIAL_Click(sender As Object, e As EventArgs) Handles BttFATORIAL.Click
         n1 = Val(TxtBox.Text)
-        Dim result As Double = 1
-        For i = n1 To 1 Step -1
-            n1 = n1 * i
-        Next
-        'TxtBox.Text = Str(n1)
-        TxtBox.Text &= n1 & "!" & "=" & Str(n1)
-        eae = 0
 
-        If n1 < 0 Then
+        If n1 < 0 Or n1 <> Int(n1) Then
             MsgBox("Fatorial tem que ser um número positivo e inteiro", vbCritical, "Fatorial")
+            Exit Sub
         End If
+
+        Dim result As Double = 1
+
+        For i As Integer = 1 To n1
+            result *= i
+        Next
+
+        TxtBox.Text = Str(result)
+        eae = 0
 
     End Sub
 
@@ -286,6 +294,7 @@ Public Class Form1
 
         TxtBox.Text &= n1 & "P" & n & "=" & Str(Fatorial(n1) / Fatorial(n1 - n)) 'nPc
         eae = 0
+
 
     End Sub
 
