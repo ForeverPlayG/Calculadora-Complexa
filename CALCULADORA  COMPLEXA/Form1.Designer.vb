@@ -311,7 +311,7 @@ Partial Class Form1
         ' 
         ' BttTAN1
         ' 
-        BttTAN1.Location = New Point(604, 340)
+        BttTAN1.Location = New Point(604, 237)
         BttTAN1.Name = "BttTAN1"
         BttTAN1.Size = New Size(67, 42)
         BttTAN1.TabIndex = 34
@@ -329,7 +329,7 @@ Partial Class Form1
         ' 
         ' BttRAD
         ' 
-        BttRAD.Location = New Point(537, 237)
+        BttRAD.Location = New Point(537, 184)
         BttRAD.Name = "BttRAD"
         BttRAD.Size = New Size(60, 42)
         BttRAD.TabIndex = 32
@@ -338,9 +338,9 @@ Partial Class Form1
         ' 
         ' BttGRAUS
         ' 
-        BttGRAUS.Location = New Point(604, 237)
+        BttGRAUS.Location = New Point(537, 237)
         BttGRAUS.Name = "BttGRAUS"
-        BttGRAUS.Size = New Size(67, 42)
+        BttGRAUS.Size = New Size(60, 42)
         BttGRAUS.TabIndex = 31
         BttGRAUS.Text = "Graus"
         BttGRAUS.UseVisualStyleBackColor = True
@@ -356,7 +356,7 @@ Partial Class Form1
         ' 
         ' BttLOG
         ' 
-        BttLOG.Location = New Point(537, 184)
+        BttLOG.Location = New Point(537, 132)
         BttLOG.Name = "BttLOG"
         BttLOG.Size = New Size(60, 42)
         BttLOG.TabIndex = 29
@@ -365,18 +365,18 @@ Partial Class Form1
         ' 
         ' BttSD
         ' 
-        BttSD.Location = New Point(604, 184)
+        BttSD.Location = New Point(604, 340)
         BttSD.Name = "BttSD"
         BttSD.Size = New Size(67, 42)
         BttSD.TabIndex = 28
-        BttSD.Text = "S-D"
+        BttSD.Text = "SAIR"
         BttSD.UseVisualStyleBackColor = True
         ' 
         ' BttPERMUTACOES
         ' 
-        BttPERMUTACOES.Location = New Point(537, 132)
+        BttPERMUTACOES.Location = New Point(604, 184)
         BttPERMUTACOES.Name = "BttPERMUTACOES"
-        BttPERMUTACOES.Size = New Size(60, 42)
+        BttPERMUTACOES.Size = New Size(67, 42)
         BttPERMUTACOES.TabIndex = 27
         BttPERMUTACOES.Text = "nPc"
         BttPERMUTACOES.UseVisualStyleBackColor = True
@@ -443,8 +443,10 @@ Partial Class Form1
         Controls.Add(Btt2)
         Controls.Add(Btt1)
         Controls.Add(TxtBox)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        KeyPreview = True
         Name = "Form1"
-        Text = "Form1"
+        Text = "Calculadora "
         ResumeLayout(False)
         PerformLayout()
     End Sub

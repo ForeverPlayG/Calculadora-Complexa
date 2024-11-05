@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("CALCULADORA  COMPLEXA"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06a892cd7c8997e87c51f3d991961e7851b0b3b8"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8296b9881177c2ddcdcd0bb6e3df1672d987497"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("CALCULADORA  COMPLEXA"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("CALCULADORA  COMPLEXA"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

@@ -1,16 +1,16 @@
 ﻿Imports System.Diagnostics.Eventing.Reader
 Imports System.Math
 Imports System.Threading
-' A MODIFICAR: Quando for feita a FR, vai aparecer outro visor a mostrai x2=  FEITO
+' A MODIFICAR:
 '              Botão de cancelar nas combinações que crasha    
-'              corrigir Aparecer escrito no txtbox o que estou a escrever na trignometria, raiz , raiz de indice X, log e  calc comb
-'              Botão para apagar o ultimo caracter escrito FEITO 
-'              Personalização 
+'              Ver se está tudo a ser escrito como deve seer
+'              casas decimais da trignometria 
 '              :D
 Public Class Form1
     Dim eae, op As Byte
     Dim n1, n2 As Long
     Dim isRadians As Boolean = False
+
 
 
 
@@ -24,7 +24,7 @@ Public Class Form1
     End Sub
 
     Private Sub TxtBox_TextChanged(sender As Object, e As EventArgs) Handles TxtBox.TextChanged
-        eae = 0
+
     End Sub
 
 
@@ -82,33 +82,56 @@ Public Class Form1
     End Sub
 
     Private Sub BttIGUAL_Click(sender As Object, e As EventArgs) Handles BttIGUAL.Click
-        n2 = Val(TxtBox.Text)
+        n2 = CDbl(Val(TxtBox.Text)) ' CDbl mantem as casas decimais
+
+        Dim resultado As Double
+
         Select Case op
             Case 1
-                TxtBox.Text = Str(n1 + n2)
+                resultado = n1 + n2
+                TxtBox.Text = n1 & " + " & n2 & " = " & Format(resultado, "0.######")
             Case 2
-                TxtBox.Text = Str(n1 - n2)
+                resultado = n1 - n2
+                TxtBox.Text = n1 & " - " & n2 & " = " & Format(resultado, "0.######")
             Case 3
-                TxtBox.Text = Str(n1 * n2)
+                resultado = n1 * n2
+                TxtBox.Text = n1 & " × " & n2 & " = " & Format(resultado, "0.######")
             Case 4
-                TxtBox.Text = Str(n1 / n2)
+                If n2 <> 0 Then
+                    resultado = n1 / n2
+                    TxtBox.Text = n1 & " ÷ " & n2 & " = " & Format(resultado, "0.######")
+                Else
+                    TxtBox.Text = "Erro: Divisão por zero"
+                    Exit Sub
+                End If
             Case 5
-                TxtBox.Text = Str(n1 ^ n2)
-            Case 6
-                TxtBox.Text = Str(If(isRadians, Sin(n1), Sin(n1 * PI / 180)))
-            Case 7
-                TxtBox.Text = Str(If(isRadians, Cos(n1), Cos(n1 * PI / 180)))
-            Case 8
-                TxtBox.Text = Str(If(isRadians, Tan(n1), Tan(n1 * PI / 180)))
+                resultado = n1 ^ n2
+                TxtBox.Text = n1 & " ^ " & n2 & " = " & Format(resultado, "0.######")
 
+            Case 6
+                resultado = If(isRadians, Sin(n2), Sin(n2 * PI / 180))
+                TxtBox.Text = "SIN(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
+            Case 7
+                resultado = If(isRadians, Cos(n2), Cos(n2 * PI / 180))
+                TxtBox.Text = "COS(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
+            Case 8
+                resultado = If(isRadians, Tan(n2), Tan(n2 * PI / 180))
+                TxtBox.Text = "TAN(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
             Case 9
-                TxtBox.Text = Str(If(isRadians, Asin(n1), Asin(n1) * 180 / PI))
+                resultado = If(isRadians, Asin(n2), Asin(n2) * 180 / PI)
+                TxtBox.Text = "SIN⁻¹(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
             Case 10
-                TxtBox.Text = Str(If(isRadians, Acos(n1), Acos(n1) * 180 / PI))
+                resultado = If(isRadians, Acos(n2), Acos(n2) * 180 / PI)
+                TxtBox.Text = "COS⁻¹(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
             Case 11
-                TxtBox.Text = Str(If(isRadians, Atan(n1), Atan(n1) * 180 / PI))
+                resultado = If(isRadians, Atan(n2), Atan(n2) * 180 / PI)
+                TxtBox.Text = "TAN⁻¹(" & n2 & If(isRadians, " rad", "°") & ") = " & Format(resultado, "0.######")
+            Case 12
+                resultado = Log10(n2)
+                TxtBox.Text = "log(" & n2 & ") = " & Format(resultado, "0.######")
             Case 13
-                TxtBox.Text = Str(Log10(n1))
+                resultado = n2 ^ 0.5
+                TxtBox.Text = "√" & n2 & " = " & Format(resultado, "0.######")
         End Select
         eae = 0
     End Sub
@@ -117,40 +140,37 @@ Public Class Form1
         op = 1
         eae = 0
         n1 = Val(TxtBox.Text)
-        TxtBox.Text &= " + " & n2
+        TxtBox.Text &= " + "
     End Sub
 
     Private Sub BttMENOS_Click(sender As Object, e As EventArgs) Handles BttMENOS.Click
         op = 2
         eae = 0
         n1 = Val(TxtBox.Text)
-        TxtBox.Text &= " - " & n2
+        TxtBox.Text &= " - "
     End Sub
 
     Private Sub BttVEZES_Click(sender As Object, e As EventArgs) Handles BttVEZES.Click
         op = 3
         eae = 0
         n1 = Val(TxtBox.Text)
-        TxtBox.Text &= " X " & n2
-
+        TxtBox.Text &= " × "
     End Sub
 
     Private Sub BttDIVIDIR_Click(sender As Object, e As EventArgs) Handles BttDIVIDIR.Click
         op = 4
         eae = 0
         n1 = Val(TxtBox.Text)
-        TxtBox.Text &= " : " & n2
-
+        TxtBox.Text &= " ÷ "
     End Sub
 
     '-------------------------------------------------------------------------------------------------------
 
 
     Private Sub BttSQR_Click(sender As Object, e As EventArgs) Handles BttSQR.Click
-        n1 = Val(TxtBox.Text)
-        'TxtBox.Text = Str(Sqrt(n1))
+        op = 13
         eae = 0
-        TxtBox.Text &= "√" & n1 & "=" & Str(Sqrt(n1))
+        TxtBox.Text = "√"
 
     End Sub
 
@@ -163,6 +183,7 @@ Public Class Form1
         op = 5
         eae = 0
         n1 = Val(TxtBox.Text)
+        TxtBox.Text &= " ^ "
     End Sub
 
 
@@ -170,39 +191,33 @@ Public Class Form1
 
     ' trignometria
     Private Sub BttSIN_Click(sender As Object, e As EventArgs) Handles BttSIN.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "SIN(" & n1 & If(isRadians, " rad", "°") & ")"
         op = 6
+        TxtBox.Text = "SIN("
     End Sub
 
     Private Sub BttCOS_Click(sender As Object, e As EventArgs) Handles BttCOS.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "COS(" & n1 & If(isRadians, " rad", "°") & ")"
+        TxtBox.Text = "COS("
         op = 7
     End Sub
 
     Private Sub BttTAN_Click(sender As Object, e As EventArgs) Handles BttTAN.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "TAN(" & n1 & If(isRadians, " rad", "°") & ")"
+        TxtBox.Text = "TAN("
         op = 8
     End Sub
 
 
     Private Sub BttSIN1_Click(sender As Object, e As EventArgs) Handles BttSIN1.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "SIN⁻¹(" & n1 & If(isRadians, " rad", "°") & ")"
+        TxtBox.Text = "SIN⁻¹("
         op = 9
     End Sub
 
     Private Sub BttCOS1_Click(sender As Object, e As EventArgs) Handles BttCOS1.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "COS⁻¹(" & n1 & If(isRadians, " rad", "°") & ")"
+        TxtBox.Text = "COS⁻¹("
         op = 10
     End Sub
 
     Private Sub BttTAN1_Click(sender As Object, e As EventArgs) Handles BttTAN1.Click
-        n1 = Val(TxtBox.Text)
-        TxtBox.Text = "TAN⁻¹(" & n1 & If(isRadians, " rad", "°") & ")"
+        TxtBox.Text = "TAN⁻¹("
         op = 11
     End Sub
 
@@ -226,10 +241,9 @@ Public Class Form1
 
 
     Private Sub BttLOG_Click(sender As Object, e As EventArgs) Handles BttLOG.Click
-        n1 = Val(TxtBox.Text)
-        op = 13
+        op = 12
         eae = 0
-        'TxtBox.Text &= "Log" & n1 & "=" & op = 13
+        TxtBox.Text = "log("
     End Sub
 
 
@@ -237,7 +251,7 @@ Public Class Form1
 
     Private Sub BttAPAGAR_Click(sender As Object, e As EventArgs) Handles BttAPAGAR.Click
         If TxtBox.Text.Length > 0 Then
-            ' Remove o último caractere
+            ' apaga o último caractere
             TxtBox.Text = TxtBox.Text.Substring(0, TxtBox.Text.Length - 1)
         End If
         If TxtBox.Text.Length = 0 Then
@@ -278,21 +292,33 @@ Public Class Form1
 
     Private Sub BttPERMUTACOES_Click(sender As Object, e As EventArgs) Handles BttPERMUTACOES.Click
         n1 = Val(TxtBox.Text)
-        Dim n As Double = InputBox("Valor de c:")
 
-        If n > n1 Then
-            MsgBox("Erro de Sintaxe, p não pode ser > n ", vbCritical, "Permutação ")
+        Dim inputP As String = InputBox("Valor de p:")
 
-            Exit Sub
-            Threading.Thread.Sleep(500)
-
+        If inputP = "" Then
             BttC_Click(sender, e)
-
-
+            Exit Sub
         End If
+
+        Dim p As Double = Val(inputP)
+
+        If p > n1 Then
+            MsgBox("Erro de Sintaxe, p não pode ser > n", vbCritical, "Permutação")
+            Exit Sub
+        ElseIf p < 0 Or p <> Int(p) Then
+            MsgBox("Erro de Sintaxe, p deve ser um número inteiro positivo", vbCritical, "Permutação")
+            Exit Sub
+        End If
+
+
+        'If n = "" Then
+        '  MsgBox("Erro de Sintaxe, n tem que ser um número ", vbCritical, "Permutação ")
+        ' End If
+
+
         ' TxtBox.Text = Str(Fatorial(n1) / Fatorial(n1 - n)) ' nPr
 
-        TxtBox.Text &= n1 & "P" & n & "=" & Str(Fatorial(n1) / Fatorial(n1 - n)) 'nPc
+        TxtBox.Text &= "P" & p & "=" & Str(Fatorial(n1) / Fatorial(n1 - p)) 'nPc
         eae = 0
 
 
@@ -300,38 +326,41 @@ Public Class Form1
 
     Private Sub BttCONTAGENS_Click(sender As Object, e As EventArgs) Handles BttCONTAGENS.Click
         n1 = Val(TxtBox.Text)
-        Dim n As Double = InputBox("Valor de p:")
 
-        If n > n1 Then
-            MsgBox("Erro de Sintaxe, p não pode ser > n ", vbCritical, "Permutação ")
+        Dim inputP As String = InputBox("Valor de p:")
 
-            Exit Sub
-            Threading.Thread.Sleep(500)
-
+        If inputP = "" Then
             BttC_Click(sender, e)
-
+            Exit Sub
         End If
+
+        Dim p As Double = Val(inputP)
+
+        If p > n1 Then
+            MsgBox("Erro de Sintaxe, p não pode ser > n", vbCritical, "Permutação")
+            Exit Sub
+        ElseIf p < 0 Or p <> Int(p) Then
+            MsgBox("Erro de Sintaxe, p deve ser um número inteiro positivo", vbCritical, "Permutação")
+            Exit Sub
+        End If
+
+        TxtBox.Text &= "C" & p & "=" & Str(Fatorial(n1) / (Fatorial(p) * Fatorial(n1 - p))) 'nCp
+        eae = 0
+
 
         'TxtBox.Text = Str(Fatorial(n1) / (Fatorial(n) * Fatorial(n1 - n))) ' nCr
 
-        TxtBox.Text &= n1 & "C" & n & "=" & Str(Fatorial(n1) / (Fatorial(n) * Fatorial(n1 - n))) 'nCp
-        eae = 0
-
-        If n > n1 Then
-            TxtBox.Text = "Erro de Sintaxe, p não pode ser > n "
-
-            '  Module Module1
-            'Sub Main()
-            '    Console.WriteLine(":D")
-            '   Thread.Sleep(5000) ' 5000 milissegundos (5 segundos)
-            '  Console.WriteLine("XD")
-            'End Sub
-            'End Module
-
-            ' BttC.Click()
 
 
-        End If
+        '  Module Module1
+        'Sub Main()
+        '    Console.WriteLine(":D")
+        '   Thread.Sleep(5000) ' 5000 milissegundos (5 segundos)
+        '  Console.WriteLine("XD")
+        'End Sub
+        'End Module
+
+        ' BttC.Click()
         '-------------------------------------------------------------------------------------------------------
     End Sub
 
@@ -340,7 +369,7 @@ Public Class Form1
         Dim n As Double = InputBox("Valor de x:")
 
         ' TxtBox.Text = Str(n1 ^ (1 / n))
-        TxtBox.Text &= "^" & n & "√" & n1 & "=" & Str(n1 ^ (1 / n))
+        TxtBox.Text = "^" & n & "√" & n1 & "=" & Str(n1 ^ (1 / n))
         eae = 0
 
     End Sub
@@ -375,12 +404,19 @@ Public Class Form1
 
             TxtBox.Text = "x1 = " & x1 & vbCrLf & "x2 = " & x2
 
-
-            ' A MODIFICAR: quando for feita a FR, vai aparecer outro visor a mostrai x2= 
         End If
     End Sub
     '--------------------------------------------------------------------------------------------------------------
     Private Sub BttSD_Click(sender As Object, e As EventArgs) Handles BttSD.Click
+        Me.Close()
+    End Sub
 
+    Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
+        tecla(Asc(e.KeyChar))
     End Sub
 End Class
+
+
+
+'tecla(asc(e.KeyChar))
+' mudar key previw np txtbox par true 
