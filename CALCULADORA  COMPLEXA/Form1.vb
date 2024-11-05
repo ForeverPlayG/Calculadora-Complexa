@@ -2,8 +2,8 @@
 Imports System.Math
 Imports System.Threading
 ' A MODIFICAR:
-'              Botão de cancelar nas combinações que crasha    
-'              Ver se está tudo a ser escrito como deve seer
+'              Botão de cancelar nas combinações que crasha  FEITO  
+'              Ver se está tudo a ser escrito como deve seer FEITO
 '              casas decimais da trignometria 
 '              :D
 Public Class Form1
